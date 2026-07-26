@@ -368,6 +368,20 @@
   }
   .proj-card--empty:hover{transform:none;border-color:var(--line);}
   .proj-card--empty .proj-ch{color:var(--text-muted);}
+
+  .proj-link{
+    display:flex;
+    flex-direction:column;
+    cursor:pointer;
+  }
+  .proj-read{
+    margin-top:auto;
+    padding-top:14px;
+    font-family:var(--font-display);
+    font-size:12px;
+    color:var(--accent-green);
+    letter-spacing:0.5px;
+  }
   .proj-ch{
     font-family:var(--font-display);
     font-size:11px;
@@ -636,7 +650,8 @@
   <h2 class="section-title">📝 Artigos</h2>
   <div class="proj-grid">
 
-    <div class="proj-card">
+    <!-- Troque o href abaixo pelo link do artigo assim que publicar -->
+    <a class="proj-card proj-link" href="https://www.linkedin.com/pulse/da-engenharia-%C3%A0-tecnologia-informa%C3%A7%C3%A3o-uma-jornada-movida-%C3%A1vila-7wbof" target="_blank" rel="noopener">
       <div class="proj-ch">FREQ 01</div>
       <h3>Da Engenharia à Tecnologia da Informação</h3>
       <p>Meu primeiro artigo, sobre a jornada de transição de carreira da Engenharia para a área de TI.</p>
@@ -644,7 +659,8 @@
         <span class="tag">Carreira</span>
         <span class="tag">Transição</span>
       </div>
-    </div>
+      <span class="proj-read">Ler artigo →</span>
+    </a>
 
     <div class="proj-card proj-card--empty">
       <div class="proj-ch">EM BREVE</div>
